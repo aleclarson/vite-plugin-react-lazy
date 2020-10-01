@@ -1,0 +1,47 @@
+{
+  "name": "vite-plugin-react-lazy",
+  "version": "0.1.0",
+  "description": "Seamless conditional imports with React Suspense",
+  "author": "Alec Larson",
+  "license": "MIT",
+  "repository": "alloc/vite-plugin-react-lazy",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "yarn build"
+  },
+  "peerDependencies": {
+    "vite": "*"
+  },
+  "dependencies": {
+    "acorn": "^8.0.1",
+    "replace-string": "^3.1.0",
+    "resolve": "^1.17.0",
+    "rollup-plugin-react-lazy": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/resolve": "^1.17.1",
+    "esbuild": "0.7.2",
+    "prettier": "^2.0.5",
+    "rollup": "^2.28.2",
+    "rollup-plugin-dts": "^1.4.10",
+    "rollup-plugin-esbuild": "^2.4.2",
+    "typescript": "^4.0.0",
+    "vite": "^1.0.0-rc.4"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "react",
+    "lazy",
+    "conditional",
+    "import",
+    "imports",
+    "suspense"
+  ]
+}
