@@ -34,7 +34,6 @@ export default (config: Config): Plugin => {
     plugin.configureServer = ({ app }) => {
       const load: RollupLoadFn = (rollupPlugin.load as any).bind(rollupContext)
       app.use(async (ctx, next) => {
-        console.log('load:', ctx.path)
         if (/\/react-lazy-runtime(\/|$)/.test(ctx.path)) {
           ctx.path = ctx.path.replace('/@modules/', '')
           ctx.body = await load(ctx.path)
